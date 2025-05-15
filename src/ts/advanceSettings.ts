@@ -3,7 +3,6 @@
 import General from "./general.js";
 import Light from './basicSettings.js';
 
-// import { Chart } from 'chart.js';
 
 interface advanceSettingsData {
     name: string;
