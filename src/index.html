@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home Component | Smart Light</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="../dist/main.js"></script>
 </head>
 <body>
     <!-- homepage ui -->
@@ -16,8 +16,8 @@
             <span>Welcome, light up</span>
         </h1>
         <button type="button" class="entry_point">
-            <img src="./assets/svgs/light_bulb.svg" alt="light bulb svg icon">
-            <img src="./assets/svgs/light_bulb_off.svg" alt="light bulb svg icon">
+            <img src="../assets/svgs/light_bulb.svg" alt="light bulb svg icon">
+            <img src="../assets/svgs/light_bulb_off.svg" alt="light bulb svg icon">
             <p> Click to begin </p>
         </button>
     </main>
@@ -25,10 +25,10 @@
     <!-- application ui -->
      <nav class=" hidden ">
          <button class="network-container">
-             <img src="./assets/svgs/wifi.svg" alt="wifi svg icon">
+             <img src="../assets/svgs/wifi.svg" alt="wifi svg icon">
         </button>
         <button class="general_light_switch">
-            <img src="./assets/svgs/light_bulb.svg" alt="light svg icon">
+            <img src="../assets/svgs/light_bulb.svg" alt="light svg icon">
         </button>
         <!-- <section>
             <p>JAY</p>
@@ -37,57 +37,57 @@
      <section class="application_container  hidden ">
         <div class="flex1">
             <div class="rooms hall">
-                <img src="./assets/imgs/hall.jpg" alt="image of a hall">
+                <img src="../assets/imgs/hall.jpg" alt="image of a hall">
                 <p>Hall</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
                 </div>
             </div>
             <div class="rooms bedroom">
-                <img src="./assets/imgs/bedroom.jpg" alt="image of a bedroom">
+                <img src="../assets/imgs/bedroom.jpg" alt="image of a bedroom">
                 <p>bedroom</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
                 </div>
             </div>
             <div class="rooms bathroom">
-                <img src="./assets/imgs/bathroom.jpg" alt="image of a bathroom">
+                <img src="../assets/imgs/bathroom.jpg" alt="image of a bathroom">
                 <p>bathroom</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0.5" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
@@ -97,57 +97,57 @@
         </div>
         <div class="flex2">
             <div class="rooms outside_lights">
-                <img src="./assets/imgs/outside.jpg" alt="image of a outside_lights">
+                <img src="../assets/imgs/outside.jpg" alt="image of a outside_lights">
                 <p>Outdoor lights</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
                 </div>
             </div>
             <div class="rooms guest_room">
-                <img src="./assets/imgs/guest_room.jpg" alt="image of a guest_room">
+                <img src="../assets/imgs/guest_room.jpg" alt="image of a guest_room">
                 <p>guest room</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
                 </div>
             </div>
             <div class="rooms kitchen">
-                <img src="./assets/imgs/kitchen.jpg" alt="image of a kitchen">
+                <img src="../assets/imgs/kitchen.jpg" alt="image of a kitchen">
                 <p>kitchen</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
@@ -157,19 +157,19 @@
         </div>
         <div class="flex3">
             <div class="rooms corridor walkway_&_corridor">
-                <img src="./assets/imgs/walkway.jpg" alt="image of a corridor">
+                <img src="../assets/imgs/walkway.jpg" alt="image of a corridor">
                 <p>walkway & corridor</p>
                 <div class="basic_settings">
                     <section class="slider">
-                        <input type="range" name="light intensity" id="light_intensity" value="0" min="0" max="10">
+                        <input type="range" name="light intensity" class="light_intensity" value="0" min="0" max="10">
                     </section>
                     <section class="basic_settings_buttons">
                         <button class="light-switch">
-                            <img src="./assets/svgs/light_bulb_off.svg" data-lightOn="./assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/light_bulb_off.svg" data-lightOn="../assets/svgs/light_bulb.svg" alt="fullscreen button svg icon">
                         </button>
 
                         <button class="advance-settings_modal">
-                            <img src="./assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
+                            <img src="../assets/svgs/enlarge.svg" alt="fullscreen button svg icon">
                         </button>
 
                     </section>
@@ -186,7 +186,7 @@
             <p class="hidden not_available">Wifi is currently not available</p>
             <!-- <p class="hidden available">Wifi connections available</p> -->
             <div class="img_svg-container">
-                <img src="./assets/svgs/wifi.svg" alt="disconnected wifi svg logo" data-altWifiImg="./assets/svgs/wifi-disconnected.svg">
+                <img src="../assets/svgs/wifi.svg" alt="disconnected wifi svg logo" data-altWifiImg="../assets/svgs/wifi-disconnected.svg">
             </div>
         </section>
       </div>
