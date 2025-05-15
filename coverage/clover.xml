@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747327545484" clover="3.2.0">
-  <project timestamp="1747327545484" name="All files">
+<coverage generated="1747328975888" clover="3.2.0">
+  <project timestamp="1747328975888" name="All files">
     <metrics statements="161" coveredstatements="37" conditionals="41" coveredconditionals="0" methods="51" coveredmethods="17" elements="253" coveredelements="54" complexity="0" loc="161" ncloc="161" packages="1" files="3" classes="3"/>
     <file name="advanceSettings.ts" path="C:\Users\user\Documents\AmaliTechTraining\Labs\statically-strict-debugger\src\ts\advanceSettings.ts">
       <metrics statements="70" coveredstatements="14" conditionals="7" coveredconditionals="0" methods="20" coveredmethods="3"/>
