@@ -169,6 +169,7 @@ h1 span:first-child {
     z-index: -1;
     /* opacity: .1; */
     filter: brightness(0.0);
+    /* transition: filter 0.3s ease-in-out; */
 
 }
 .main_hall, .hall {
