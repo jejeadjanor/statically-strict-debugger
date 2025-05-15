@@ -58,20 +58,6 @@ mainRoomsContainer.addEventListener('change', (e: Event): void => {
     
 })
 
-// rooms.forEach((room) => {
-//     const slider = room.querySelector('input[type="range"]') as HTMLInputElement | null;
-//     const img = room.querySelector('img') as HTMLImageElement | null;
-
-//     if(slider && img) {
-//         slider.addEventListener('input', () => 
-//         {
-//         const value = Number(slider.value);
-//         const brightness = value/10;
-//         img.style.filter = `brightness(${brightness})`;
-        
-//     })
-//     }
-// })
 
 // advance settings modal
 advanceFeaturesContainer.addEventListener('click', (e: MouseEvent): void => {

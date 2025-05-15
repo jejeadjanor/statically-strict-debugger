@@ -1,7 +1,7 @@
 'use strict'
 
-import General from "./general.js";
-import Light from './basicSettings.js';
+import General from "./general";
+import Light from './basicSettings';
 
 
 interface advanceSettingsData {
