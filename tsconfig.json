@@ -4,13 +4,13 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "rootDir": "./src",
-    "outDir": "./dist",
+    "outDir": "./public",
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,
     "moduleDetection": "force"
   },
-  "include": ["./src/**/*"],
-  "exclude": ["./dist"]
+  "include": ["./**/*"],
+  "exclude": ["node_modules"]
 }
