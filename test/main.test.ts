@@ -3,9 +3,9 @@
  */
  
 import Light from '../src/ts/basicSettings';
-import AdvanceSettings from '../src/ts/advanceSettings';
 
-//Mocks
+
+//Mocking
 jest.mock('../src/ts/basicSettings');
 jest.mock('../src/ts/advanceSettings');
 
@@ -17,7 +17,7 @@ let nav: HTMLElement;
 let mainRoomsContainer: HTMLElement;
 let advanceFeaturesContainer: HTMLElement;
 
-let lightController: Light;
+
 
 beforeEach(() => {
     document.body.innerHTML = `
@@ -37,27 +37,6 @@ beforeEach(() => {
     advanceFeaturesContainer = document.querySelector('.advanced_features_container')!;
 });
 
-test('should toggle light switch when .light-switch is is clicked', () => {
-    const toggleLightSwitchMock = jest.fn();
-    (Light as jest.Mock).mockImplementation(() => ({
-        toggleLightSwitch: toggleLightSwitchMock,
-    }));
-
-    const lightController = new Light();
-
-    const button = document.createElement('button');
-    button.className = 'light-switch';
-    const wrapper = document.createElement('button');
-    wrapper.className = 'basic_settings_buttons';
-    wrapper.appendChild(button);
-    mainRoomsContainer.appendChild(button);
-
-    const event = new MouseEvent('click', { bubbles: true});
-    button.dispatchEvent(event);
-
-    expect(toggleLightSwitchMock).toHaveBeenCalled();
-});
-
 test("should hide homepage and show loader on homepageButton click", () => {
 		const homepageButton = document.querySelector(".entry_point")!;
 		const homepage = document.querySelector("main")!;
@@ -74,9 +53,7 @@ test("should hide homepage and show loader on homepageButton click", () => {
 
     test("should toggle light switch on mainRoomsContainer click", () => {
         const lightController = new Light();
-		const mainRoomsContainer = document.querySelector(
-			".application_container"
-		)!;
+		const mainRoomsContainer = document.querySelector(".application_container")!;
 		const lightSwitch = document.createElement("div");
 		lightSwitch.className = "light-switch basic_settings_buttons";
 		mainRoomsContainer.appendChild(lightSwitch);
